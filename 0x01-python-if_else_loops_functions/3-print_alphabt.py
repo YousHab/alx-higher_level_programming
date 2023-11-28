@@ -3,5 +3,4 @@ for letter in range(97, 123):
     if letter == 101 or letter == 113:
         continue
     else:
-        alpha = chr(letter)
-        print(f"{alpha}", end="")
+        print(f"{chr(letter)}", end="")
