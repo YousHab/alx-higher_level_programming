@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def magic_calculation(a, b):
-    add = magic_calculation_102.add, 
+    add = magic_calculation_102.add 
     sub = magic_calculation_102.sub
     if a < b:
         c = add(a, b)
