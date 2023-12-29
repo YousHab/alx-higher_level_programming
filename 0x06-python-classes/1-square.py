@@ -4,7 +4,7 @@
 
 class Square:
     """Class definition
-    
+
     Attributes:
         size: the size of square
     """
