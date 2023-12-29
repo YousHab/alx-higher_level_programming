@@ -3,8 +3,11 @@
 
 
 class Square:
-    """Class definition"""
-
+    """Class definition
+    
+    Attributes:
+        size: the size of square
+    """
     def __init__(self, size):
         """Constructor
         Args:
