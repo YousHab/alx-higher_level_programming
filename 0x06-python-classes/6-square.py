@@ -33,7 +33,7 @@ class Square:
         else:
             for i in range(self.__size):
                 print("#" * (self.__size))
-
+        
     @property
     def size(self):
         """Returns the size of a square
