@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" RECTANGLE TASK0
+""" RECTANGLE TASK1
 """
 
 
@@ -66,5 +66,4 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
