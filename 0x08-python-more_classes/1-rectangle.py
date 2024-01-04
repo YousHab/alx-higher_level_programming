@@ -8,6 +8,10 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """ attribute assigment here engages setters defined below
+
+        Attributes:
+            width: the horizontal dimension of rectangle
+            height: the vertical dimension of rectangle
         """
         self.__width = width
         self.__height = height
