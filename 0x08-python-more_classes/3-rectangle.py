@@ -15,33 +15,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-
-    def area(self):
-        """ Calculate the area of rectangle.
-
-        Returns:
-            The area of rectangle.
-        """
-        return self.width * self.__height
-
-    def perimeter(self):
-        """ Calculate the perimetre of rectangle
-
-        Returns:
-            The perimeter of the rectangle.
-        """
-        if self.__height == 0 or self.__width == 0:
-            return 0
-        return 2 * (self.__height + self.__width)
-
-    def __str__(self):
-        """ print the rectangle with the character #
-
-        Returns:
-            A rectangle of #s.
-        """
-        return ("#" * self.__width + '\n') * self.__height
-
     @property
     def width(self):
         """ width getter.
@@ -99,3 +72,31 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """ Calculate the area of rectangle.
+
+        Returns:
+            The area of rectangle.
+        """
+        return self.width * self.__height
+
+    def perimeter(self):
+        """ Calculate the perimetre of rectangle
+
+        Returns:
+            The perimeter of the rectangle.
+        """
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__height + self.__width)
+
+    def __str__(self):
+        """ print the rectangle with the character #
+
+        Returns:
+            A rectangle of #s.
+        """
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        return ("#" * self.__width + '\n') * self.__height
