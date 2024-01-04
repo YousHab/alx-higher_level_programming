@@ -13,8 +13,8 @@ class Rectangle:
             width: the horizontal dimension of rectangle
             height: the vertical dimension of rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -88,6 +88,17 @@ class Rectangle:
         Returns:
             The perimeter of the rectangle.
         """
+
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__height + self.__width)
+
+    def __str__(self):
+        """ print the rectangle with the character #
+
+        Returns:
+            A rectangle of #s.
+        """
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        return ("#" * self.__width + '\n') * self.__height
