@@ -24,6 +24,8 @@ class Rectangle:
         Returns:
             The perimeter of the rectangle.
         """
+        if self.__height == 0 or self.__width == 0:
+            return 0
         return 2 * (self.__height + self.__width)
 
     @property
@@ -79,7 +81,7 @@ class Rectangle:
             ValueError: If `value` is less than 0.
         """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
