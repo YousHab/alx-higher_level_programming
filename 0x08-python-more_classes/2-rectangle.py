@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" RECTANGLE TASK1
+""" RECTANGLE TASK2
 """
 
 
