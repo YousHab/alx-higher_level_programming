@@ -69,7 +69,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-Rectangle1 = Rectangle()
-Rectangle1.height = "foo"
-Rectangle1.width = "hh"
