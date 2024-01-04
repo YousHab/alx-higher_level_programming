@@ -13,8 +13,8 @@ class Rectangle:
             width: the horizontal dimension of rectangle
             height: the vertical dimension of rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     def area(self):
         """ Calculate the area of rectangle.
