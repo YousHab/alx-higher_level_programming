@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" RECTANGLE TASK2
+""" RECTANGLE TASK1
 """
 
 
@@ -7,6 +7,12 @@ class Rectangle:
     """ A class representing a rectangle
     """
     def __init__(self, width=0, height=0):
+        """ attribute assigment here engages setters defined below
+
+        Attributes:
+            width: the horizontal dimension of rectangle
+            height: the vertical dimension of rectangle
+        """
         self.__width = width
         self.__height = height
 
@@ -51,7 +57,7 @@ class Rectangle:
             TypeError: If `value` is not an int.
             ValueError: If `value` is less than 0.
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
@@ -80,7 +86,7 @@ class Rectangle:
             TypeError: If `value` is not an int.
             ValueError: If `value` is less than 0.
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
