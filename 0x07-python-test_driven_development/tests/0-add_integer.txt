@@ -1,0 +1,26 @@
+Documentation for 0-add_integer module
+
+===================================================
+Function that return the sum of to number
+
+Args:
+        a: the first integer
+        b: the second integer
+
+Raises:
+        TypeError: "a must be an integer" or "b must be an integer"
+
+Returns: the addition of tow integers.
+
+Examples:
+>>> add_integer(1, 1)
+3
+
+>>> add_integer(2.1, 4.95)
+6
+
+>>> add_integer("foo", 3)
+a must be an integer
+
+>>> add_integer(3, "foo")
+a must be an integer
