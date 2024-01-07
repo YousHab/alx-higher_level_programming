@@ -24,3 +24,9 @@ a must be an integer
 
 >>> add_integer(3, "foo")
 a must be an integer
+
+>>> add_integer([1, 2], 3)
+TypeError: a must be an integer
+
+>>> add_integer(2.0, 3.0)
+5
