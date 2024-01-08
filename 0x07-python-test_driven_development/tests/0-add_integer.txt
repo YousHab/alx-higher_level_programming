@@ -1,16 +1,19 @@
 Documentation for 0-add_integer module
 
 ===================================================
-Function that return the sum of to number
+Function that returns the sum of two integers.
 
 Args:
-        a: the first integer
-        b: the second integer
+    a: the first integer.
+    b: the second integer.
 
 Raises:
-        TypeError: "a must be an integer" or "b must be an integer"
+    TypeError: If either 'a' or 'b' is not an integer.
 
-Returns: the addition of tow integers.
+Returns:
+    The sum of two integers.
+
+>>> add_integer = __import__('0-add_integer').add_integer
 
 Examples:
 >>> add_integer(1, 1)
@@ -20,16 +23,16 @@ Examples:
 -8
 
 >>> add_integer(2.1, 4.95)
-6
+TypeError: a must be an integer
 
 >>> add_integer("foo", 3)
-a must be an integer
+TypeError: a must be an integer
 
 >>> add_integer(3, "foo")
-b must be an integer
+TypeError: b must be an integer
 
->>> add_integer("foo", "foo")
-a must be an integer
+>>> add_integer("foo", "bar")
+TypeError: a must be an integer
 
 >>> add_integer([1, 2], 3)
 TypeError: a must be an integer
