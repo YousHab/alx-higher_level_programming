@@ -2,9 +2,10 @@
 
 """
 =======
-Module with the method 
+Module with the method is_kind_of_clas
 =======
 """
+
 
 def is_kind_of_class(obj, a_class):
     """ function that returns True if the object is
@@ -14,7 +15,7 @@ def is_kind_of_class(obj, a_class):
     Args:
         obj: the object to be tested.
         a_class: the test class.
-    
+
     Returns:
         True: if the object is an instance of a class that
             inherited from, the specified class.
