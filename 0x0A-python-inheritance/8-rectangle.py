@@ -5,6 +5,8 @@
 module with classes BaseGeometry and Rectangle
 ===================================
 """
+
+
 class BaseGeometry:
     """BaseGeometry class"""
 
@@ -19,6 +21,8 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+
 
 class Rectangle(BaseGeometry):
     """Rectangle class that inherits from BaseGeometry"""
