@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-BG = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 """
 ===================================
@@ -8,12 +8,11 @@ module with class Rectangle
 """
 
 
-class Rectangle(BG):
+class Rectangle(BaseGeometry):
     """Rectangle class that inherits from BaseGeometry"""
 
     def __init__(self, width, height):
-
-        BG.integer_validator(self, "width", width)
+        self.integer_validator("width", width)
         self.__width = width
-        BG.integer_validator(self, "height", height)
+        self.integer_validator("height", height)
         self.__height = height
