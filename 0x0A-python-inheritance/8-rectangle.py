@@ -13,7 +13,7 @@ class Rectangle(BG):
 
     def __init__(self, width, height):
 
-        self.integer_validator("width", width)
+        BG.integer_validator(self, "width", width)
         self.__width = width
-        self.integer_validator("height", height)
+        BG.integer_validator(self, "height", height)
         self.__height = height
