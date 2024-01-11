@@ -2,7 +2,7 @@
 
 """
 ===================================
-module with classes BaseGeometry and Rectangle
+module with classes BaseGeometry and Rectangle and square
 ===================================
 """
 
