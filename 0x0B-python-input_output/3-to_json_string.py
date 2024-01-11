@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 Module with the fucntion to_json_string
 """
