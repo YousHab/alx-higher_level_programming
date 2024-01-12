@@ -7,6 +7,7 @@ Module with the class Rectangle.
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     The class Rectangle.
@@ -26,7 +27,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        self.id = super(id)
+        super().__init__(id)
 
     @property
     def width(self):
