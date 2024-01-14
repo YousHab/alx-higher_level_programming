@@ -182,7 +182,6 @@ class Rectangle(Base):
         Method that returns the dictionary representation
         of a Rectangle. 
         """
-        dictionary_repr = {}
         dictionary_keys = ["id", "width", "height", "x", "y"]
         dictionary_values = [self.id,
                              self.__width,

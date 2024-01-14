@@ -49,11 +49,31 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """
-        
+        Updates Square properties.
         """
         if args:
-            pass
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.__size = args[1]
+            if len(args) >= 3:
+                self.__x = args[2]
+            if len(args) >= 4:
+                self.__y = args[3]
         
         elif kwargs:
-            pass
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Method that returns the dictionary representation
+        of a Square. 
+        """
+        dictionary_keys = ["id", "size", "x", "y"]
+        dictionary_values = [self.id,
+                             self.__size,
+                             self.__x,
+                             self.__y]
         
+        return dict(zip(dictionary_keys, dictionary_values))  
