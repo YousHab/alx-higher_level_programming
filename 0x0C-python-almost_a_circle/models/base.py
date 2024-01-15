@@ -107,7 +107,7 @@ class Base:
         try:
             with open(filename, "r", encoding="utf-8") as my_file:
                 json_string = my_file.read()
-                json_to_dictionaries = Base.from_json_string(json_string)
+                json_to_dictionaries = cls.from_json_string(json_string)
                 return [cls.create(**d) for d in json_to_dictionaries]
         except FileNotFoundError:
             return []
