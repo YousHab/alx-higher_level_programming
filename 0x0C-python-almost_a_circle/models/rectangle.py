@@ -98,7 +98,7 @@ class Rectangle(Base):
         Args:
             name: the name of the attribute.
             value: the value to be checked.
-    
+
         Raises:
             TypeError: if the value is not int.
             ValueError: if width or height are <= 0.
@@ -115,7 +115,7 @@ class Rectangle(Base):
         Args:
             name: the name of the attribute.
             value: the value to be checked.
-    
+
         Raises:
             TypeError: if the value is not int.
             ValueError: if x or y are < 0.
@@ -124,7 +124,7 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format(name))
         elif value < 0:
             raise ValueError("{} must be >= 0".format(name))
-    
+
     def area(self):
         """
         Method thar calculate the area.
@@ -153,7 +153,7 @@ class Rectangle(Base):
                                                       self.__y,
                                                       self.__width,
                                                       self.__height)
-    
+
     def update(self, *args, **kwargs):
         """
         This method assigns an argument to each attribute.
@@ -180,7 +180,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """
         Method that returns the dictionary representation
-        of a Rectangle. 
+        of a Rectangle.
         """
         dictionary_keys = ["id", "width", "height", "x", "y"]
         dictionary_values = [self.id,
@@ -188,5 +188,5 @@ class Rectangle(Base):
                              self.__height,
                              self.__x,
                              self.__y]
-        
+
         return dict(zip(dictionary_keys, dictionary_values))

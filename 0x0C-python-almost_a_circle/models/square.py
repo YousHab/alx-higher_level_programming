@@ -29,7 +29,7 @@ class Square(Rectangle):
         Getter for the property "size".
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """
@@ -44,8 +44,9 @@ class Square(Rectangle):
         Override the __str__ method.
         Returns a formatted string: [Square] (<id>) <x>/<y> - <size>
         """
-        return "[Square] ({}) {}/{} - {} - in our case, width or height".format(
+        s1 = "[Square] ({}) {}/{} - {} - in our case, width or height".format(
             self.id, self.__x, self.__y, self.__width)
+        return s1
 
     def update(self, *args, **kwargs):
         """
@@ -60,7 +61,7 @@ class Square(Rectangle):
                 self.__x = args[2]
             if len(args) >= 4:
                 self.__y = args[3]
-        
+
         elif kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
@@ -68,12 +69,11 @@ class Square(Rectangle):
     def to_dictionary(self):
         """
         Method that returns the dictionary representation
-        of a Square. 
+        of a Square.
         """
         dictionary_keys = ["id", "size", "x", "y"]
         dictionary_values = [self.id,
                              self.__size,
                              self.__x,
                              self.__y]
-        
-        return dict(zip(dictionary_keys, dictionary_values))  
+        return dict(zip(dictionary_keys, dictionary_values))
