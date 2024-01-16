@@ -44,9 +44,9 @@ class Square(Rectangle):
         Override the __str__ method.
         Returns a formatted string: [Square] (<id>) <x>/<y> - <size>
         """
-        s1 = "[Square] ({}) {}/{} - {} - in our case, width or height".format(
-            self.id, self.__x, self.__y, self.__width)
-        return s1
+        return '[{}] ({}) {}/{} - {}/{}'.\
+            format(type(self).__name__, self.id, self.x, self.y, self.width,
+                   self.height)
 
     def update(self, *args, **kwargs):
         """
