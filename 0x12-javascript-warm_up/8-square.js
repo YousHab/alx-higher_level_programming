@@ -1,12 +1,12 @@
 #!/usr/bin/node
 // square
 
-const size = process.argv[2]
+const size = parseInt(process.argv[2])
 
-if (isNaN(size)){
+if (!size){
   console.log('Missing size');
 } else {
     for (let i = 0; i < size; i++){
-        console.log('XXX')
+        console.log('X'.repea)
     }
 }
