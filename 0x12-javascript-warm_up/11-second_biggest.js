@@ -1,10 +1,13 @@
 #!/usr/bin/node
-// fin the biggest number
+// find the biggest number
 
-const n = process.argv.length;
-if (n <= 3){
+const args = process.argv.slice(2).map(Number);
+const n = args.length;
+
+if (n <= 1) {
   console.log(0);
 } else {
-  const list = process.argv.sort();
-  console.log(list.reverse()[1]);
+  const biggest = Math.max(...args);
+  const secondBiggest = Math.max(...args.filter(num => num !== biggest));
+  console.log(secondBiggest);
 }
