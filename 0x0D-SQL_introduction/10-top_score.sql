@@ -1,3 +1,2 @@
 -- that lists all records of the table second_table
-SELECT name, score FROM second_table ORDER BY DES-- that lists all records of the table second_table
-SELECT name, score FROM second_table ORDER BY DESCC
+SELECT name, score FROM second_table ORDER BY DESC;
