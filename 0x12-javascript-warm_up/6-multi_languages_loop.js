@@ -3,6 +3,6 @@
 
 const myArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (elt of myArray){
+for (let elt of myArray) {
   console.log(elt);
 }
