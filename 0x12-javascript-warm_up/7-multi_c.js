@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 // Script that prints x times "C is fun"
 
 if (isNaN(process.argv[2])){
