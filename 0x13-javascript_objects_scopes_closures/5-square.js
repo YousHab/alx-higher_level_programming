@@ -7,6 +7,3 @@ class Square extends Rectangle {
 }
 
 module.exports = Square;
-
-const square = new Square(-4);
-console.log(square);
