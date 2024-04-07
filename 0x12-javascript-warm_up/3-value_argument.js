@@ -1,8 +1,8 @@
 #!/usr/bin/node
-// Prints the first argument passed to it
+// Write a script that prints the first argument passed to it
 
-if (process.argv[2]) {
-  console.log(process.argv[2]);
+if (!process.argv[2]) {
+  console.log('No argument');
 } else {
-  console.log('No arguments');
+  console.log(process.argv[2]);
 }
