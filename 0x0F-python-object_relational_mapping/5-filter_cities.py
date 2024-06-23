@@ -20,7 +20,6 @@ if __name__ == '__main__':
                 INNER JOIN states ON cities.state_id = states.id\
                 WHERE states.name = %s", [argv[4]])
     rows = cur.fetchall()
-    
     citiesList = []
     for elt in rows:
         citiesList.append(elt[1])
